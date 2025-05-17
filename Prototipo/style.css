@@ -1,0 +1,147 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f6ff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header.navbar {
+  background-color: #004080;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header.navbar nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+header.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 300px;
+}
+
+input, select, button {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #004080;
+  color: white;
+  cursor: pointer;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #aaa;
+}
+
+h1, h2 {
+  color: #004080;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  background-color: #e6f2ff;
+  border: 2px solid #3399ff;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 250px;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: #cce6ff;
+}
+
+.schedule {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.slot {
+  padding: 1rem;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  border: 2px solid;
+  font-weight: bold;
+}
+
+.green {
+  background-color: #d6f5d6;
+  border-color: green;
+}
+
+.red {
+  background-color: #ffe6e6;
+  border-color: red;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.styled-table th, .styled-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.styled-table th {
+  background-color: #004080;
+  color: white;
+}
+
+.cards .card {
+  background-color: #f4faff;
+  border: 1px solid #99ccff;
+  box-shadow: 0 0 5px #ccc;
+  padding: 1rem;
+  width: 280px;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
+
+.cards {
+  justify-content: center;
+}

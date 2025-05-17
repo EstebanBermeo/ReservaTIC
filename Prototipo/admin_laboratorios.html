@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Laboratorios - Administrador</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h2>ReservaTIC - Gestión de Laboratorios</h2>
+    <nav>
+      <a href="admin_calendario.html">Calendario</a>
+      <a href="admin_bloqueo.html">Bloqueos</a>
+      <a href="index.html">Cerrar sesión</a>
+    </nav>
+  </header>
+  <main style="display: flex; flex-direction: column; align-items: center;">
+    <h3>Agregar nuevo laboratorio TIC</h3>
+    <form>
+      <input type="text" placeholder="Nombre del laboratorio">
+      <input type="text" placeholder="Ubicación">
+      <input type="number" placeholder="Capacidad">
+      <button>Agregar</button>
+    </form>
+
+    <h4>Lista de laboratorios</h4>
+    <div class="cards">
+      <div class="card">
+        <strong>LABORATORIO 1</strong>
+        <p><b>Ubicación:</b> Planta Baja</p>
+        <p><b>Capacidad:</b> 25 personas</p>
+        <button onclick="window.location.href='admin_editar_laboratorio.html'">Editar</button> <button>Eliminar</button>
+      </div>
+      <div class="card">
+        <strong>LABORATORIO 2</strong>
+        <p><b>Ubicación:</b> Primer Piso</p>
+        <p><b>Capacidad:</b> 30 personas</p>
+        <button onclick="window.location.href='admin_editar_laboratorio.html'">Editar</button> <button>Eliminar</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
