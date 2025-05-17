@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ReservaTIC - Inicio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login">
+  <div class="login-container">
+    <h1>ReservaTIC</h1>
+    <form onsubmit="redirigir(event)">
+      <label for="usuario">Usuario</label>
+      <input type="text" id="usuario" placeholder="admin / docente" required>
+      <label for="clave">Contraseña</label>
+      <input type="password" id="clave" placeholder="Contraseña: 1234" required>
+      <button type="submit">Ingresar</button>
+    </form>
+  </div>
+  <script>
+    function redirigir(event) {
+      event.preventDefault();
+      const usuario = document.getElementById("usuario").value.toLowerCase();
+      const clave = document.getElementById("clave").value;
+
+      if (usuario === "admin" && clave === "1234") {
+        window.location.href = "admin_laboratorios.html";
+      } else if (usuario === "docente" && clave === "1234") {
+        window.location.href = "laboratorios.html";
+      } else {
+        alert("Credenciales incorrectas. Usa admin/docente con clave 1234.");
+      }
+    }
+  </script>
+</body>
+</html>
